@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Japan and the Swedish flags.</title>
+    <style>
+    
+    body
+    {
+        margin: 100px;
+    }
+
+    .japan
+    {
+        width:400px;
+        height: 250px;
+        background-color: beige;
+        border: 1px solid black;
+    }
+    .japan::before
+    {
+        content: "";
+        display: block;
+        height: 150px;
+        width: 150px;
+        background-color: red;
+        position: fixed;
+        top: 16%;
+        left: 19%;
+        border-radius: 50%;
+    }
+    
+    .sweden
+    {
+      display: block;
+      width: 400px;
+      height: 250px;
+      background-color: #004b87;
+    }
+    .sweden::before
+    {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 15%;
+        background-color: #ffcd00;
+        position: relative;
+        top: 40%;
+        }
+
+        .sweden::after
+        {
+         content: "";
+         display: block;
+         width: 10%;
+         height: 100%;
+         background-color: #ffcd00;
+         position: relative;
+         top: -15%;
+         left: 25%;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="japan"></div>
+    <div class="sweden"></div>
+</body>
+</html>
