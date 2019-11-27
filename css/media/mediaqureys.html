@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MediaQuerys</title>
+<style>
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #6A1384;
+  color: #FFF;
+  text-align: center;
+}
+
+header > div {
+  padding: 20px;
+  font-size: 50px;
+}
+
+
+header .small-title {
+  display: none;
+}
+
+header .biggest-title
+{
+  display: none;
+}
+
+@media (max-width: 600px )
+{
+ 
+header .big-title
+{
+   
+   display: none;
+
+}
+header .small-title {
+  display: block;
+}
+
+}
+
+@media (min-width: 1200px)
+{
+  header .big-title
+{
+   
+   display: none;
+
+}
+header .small-title {
+  display: none;
+}
+
+header .biggest-title
+{
+ display: block;  
+}
+
+}
+
+
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #eaeaea;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+  color: #000;
+}
+
+
+@media (max-width: 600px)
+{
+  
+   .sidebar
+   {
+     display: block;
+      width: 20%;
+
+   }  
+}
+
+
+</style>
+  </head>
+<body>
+    <header>
+        <div class="biggest-title">Company Title Incorporated</div>
+        <div class="big-title">Company Title Inc.</div>
+        <div class="small-title">Company</div>
+      </header>
+      <div class="sidebar">
+        <ul>
+          <li>Home</li>
+          <li>Profile</li>
+          <li>About Company</li>
+          <li>Log in</li>
+          <li>Register</li>
+        </ul>
+</body>
+</html>
